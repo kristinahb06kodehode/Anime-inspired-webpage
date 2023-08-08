@@ -1,0 +1,146 @@
+*{
+ margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+ 
+  background-color: #f67d51;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 20px;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: auto;
+  color: #fff;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: fixed;
+}
+
+.left-sidebar {
+  background-color: #98da6c;
+  border: #f28896 solid 10px;
+  left: 0;
+  outline: solid black 2px;
+}
+
+.right-sidebar {
+  background-color: #98da6c;
+  border: #f28896 solid 10px;
+  right: 0;
+  outline: solid black 2px;
+}
+
+a {
+  color: white;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weebApparel {
+  font-family: "Monofett", monospace;
+  text-align: center;
+  color: white;
+  text-shadow: #f28896 7px 7px 0px;
+  padding-bottom: 20px;
+  font-size: 3em;
+  margin: 0;
+  -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+  letter-spacing: 4px;
+  position: relative;
+  z-index: 2;
+}
+
+.logoUnderText {
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+.topBox {
+    width: 100%;
+ max-width: 808px;
+  height: 252px;
+  border: 12px solid #f28896;
+  background-color: #f4ea7b;
+  position: relative;
+  z-index: 1;
+ margin-left: 0 auto;
+ margin-right: 0 auto;
+
+ 
+}
+
+.topBoxImg {
+  object-fit: fill;
+  width: 50%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.bottomBox {
+  width: 100%;
+  height: 150px;
+  border: 12px solid #f28896;
+  background-color: #f4ea7b;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover {
+  color: #3988c5;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+
+
+
+
+
+  .sidebar {
+    width: 100%;
+    order: 2;
+  }
+
+  .content {
+    padding: 10px;
+   
+  }
+
+  .topBox {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topBoxImg {
+    width: 100%;
+    height: auto;
+    box
+  }
+
+  .bottomBox {
+    height: 100%;
+  }
+
